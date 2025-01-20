@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_Ymxlc3NlZC1tYXJ0ZW4tNTUuY2xlcmsuYWNjb3VudHMuZGV2JA",
+    "CLERK_SECRET_KEY": "sk_test_Ymxlc3NlZC1tYXJ0ZW4tNTUuY2xlcmsuYWNjb3VudHMuZGV2JA"
+  },
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--legacy-peer-deps"
+    }
+  }
+}
